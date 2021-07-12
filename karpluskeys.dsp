@@ -14,8 +14,8 @@ import("envelopes.lib");
 
 lowest_delay = ma.SR / 27.5;
 
-freq = vslider("freq", 27.5, 27.5, 4186.01, 0.01);
-gain = vslider("gain", 0, 0, 1, 0.01);
+freq = vslider("freq[style:knob]", 27.5, 27.5, 4186.01, 0.01);
+gain = vslider("gain[style:knob]", 0, 0, 1, 0.01);
 gate = button("gate");
 
 delay_samples = ma.SR / freq;
